@@ -1,4 +1,3 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300"); /*Identity by Pixelaritypixelarity.com | hello@pixelarity.comLicense: pixelarity.com/license*/
 html,
 body,
@@ -487,7 +486,6 @@ input[type="radio"] + label:before {
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 input[type="checkbox"] + label:before,
@@ -550,7 +548,6 @@ input[type="radio"] + label:before {
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: "Font Awesome 5 Free";
     font-weight: 400;
 }
 .icon > .label {
@@ -563,7 +560,7 @@ input[type="radio"] + label:before {
     font-weight: 900;
 }
 .icon.brands:before {
-    font-family: "Font Awesome 5 Brands";
+    
 }
 ol {
     list-style: decimal;
@@ -737,7 +734,6 @@ ul.icons li a:before {
     text-rendering: auto;
     line-height: 1;
     text-transform: none !important;
-    font-family: "Font Awesome 5 Free";
     font-weight: 400;
 }
 ul.icons li a:before {
@@ -978,4 +974,7 @@ body.is-preload #main {
 }
 body.is-ie #wrapper {
     height: 100%;
+}
+.fa-phone:before {
+    content: "\f095" !important;
 }
