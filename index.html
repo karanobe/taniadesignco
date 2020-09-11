@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -20,49 +22,66 @@
 							<h1>Tania Oberoi</h1>
 							<p>Designer | Procreate | Commissioned Art</p>
 						</header>
-<!-- 						
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-								</div>
-								<div class="field">
-									<label>But are you a robot?</label>
-									<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-									<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-								</div>
+						<div class="contact-form">
+							
+							<div class="contact-form__inner">
+	
+								<hr />
+								<h2>Contact Me</h2>
+								<form class="contact gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbx7VQliZ4Ro5KO3H06xcVK1Iv2goA59_vkAcCHShhhozaqq63F4/exec">
+									<div class="fields">
+										<div class="field">
+											<input type="text" name="name" id="name" placeholder="Name" required/>
+										</div>
+										<div class="field">
+											<input type="email" name="email" id="email" placeholder="Email" required/>
+										</div>
+										<div class="field">
+											<select name="event-type" id="event-type" required>
+												<option value="">Event Type</option>
+												<option value="wedding">Wedding</option>
+												<option value="baby-shower">Baby Shower</option>
+												<option value="birthday">Birthday</option>
+												<option value="graduation">Graduation</option>
+												<option value="other">Other</option>
+											</select>
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Tell Me About Your Project" rows="4" required></textarea>
+										</div>
+										<div class="field">
+											<input type="checkbox" id="human" value="yes" name="human" required/><label for="human">I'm a human</label>
+										</div>
+									</div>
+
+							      <fieldset class="pure-group honeypot-field" style="display: none;">
+							        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+							        <input id="honeypot" type="text" name="honeypot" value="" />
+							      </fieldset>
+
+									<ul class="actions special">
+										<li><input type="submit" value="Let's Talk!" class="button" /></li>
+										<li><input type="reset" value="Reset" class="button" /></li>
+									</ul>	
+
+								</form>
+								<hr />
+
+							</div>
+							<div class="thankyou_message" style="display:none;">
+								<h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
 							</div>
 							<ul class="actions special">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						 -->
+								<li class="go-back"><a href="#" class="button">Back</a></li>
+							</ul>													
+
+						</div>
 						<footer>
 							<ul class="icons">
 								<li><a target='_blank' href="https://www.etsy.com/shop/TaniaDesignCo" class="icon brands fa fa-etsy">Etsy</a></li>
 								<li><a target='_blank' href="https://www.instagram.com/taniadesignco/" class="icon brands fa fa-instagram">Instagram</a></li>
-								<li><a target='_blank' href="tel:9515517672" class="icon brands fa fa-phone">Phone</a></li>
-								<li><a target='_blank' href="mailto:taniadesignco@gmail.com" class="icon brands fa fa-envelope">Email</a></li>
+								<li><a target='_blank' href="tel:9515517672" class="icon brands fa fa-phone-square">Phone</a></li>
+								<li class="message"><a target='_blank' href="mailto:taniadesignco@gmail.com" class="icon brands fa fa-envelope-o">Email</a></li>
 							</ul>							
 						</footer>
 					</section>
@@ -83,6 +102,7 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>			
 
 	</body>
 </html>

@@ -486,6 +486,7 @@
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			color: #ff7496;
+		    font: normal normal normal 12px/2 FontAwesome;
 			content: '\f00c';
 		}
 
@@ -1047,3 +1048,20 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+/* contact form */
+
+.contact-form {
+	display: none;
+}
+
+.go-back a:before{
+	content:'\2039'
+
+}
+
+
+
+
+
+
