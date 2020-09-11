@@ -154,7 +154,7 @@
 	body, input, select, textarea {
 		color: #414f57;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 14pt;
+		font-size: 11pt;
 		font-weight: 300;
 		line-height: 2;
 		letter-spacing: 0.2em;
@@ -741,23 +741,18 @@
 	}
 
 		ul.icons li {
-			display: inline-block;
-			padding: 0.675em 0.5em;
+		    display: block;
+		    padding: 0.5em;
 		}
 
 			ul.icons li a {
-				text-decoration: none;
-				position: relative;
-				display: block;
-				width: 3.75em;
-				height: 3.75em;
-				border-radius: 100%;
-				border: solid 1px #c8cccf;
-				line-height: 3.75em;
-				overflow: hidden;
-				text-align: center;
-				text-indent: 3.75em;
-				white-space: nowrap;
+			    text-decoration: none;
+			    position: relative;
+			    display: block;
+			    border-radius: 15px;
+			    border: solid 1px #c8cccf;
+			    line-height: 2.75em;
+			    text-align: center;
 			}
 
 				ul.icons li a:before {
@@ -785,7 +780,7 @@
 				ul.icons li a:before {
 					position: absolute;
 					top: 0;
-					left: 0;
+					left: 20px;
 					width: inherit;
 					height: inherit;
 					font-size: 1.85rem;
